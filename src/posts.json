@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Tutorial NextJS",
+    "tags": ["javascript", "nextjs"],
+    "date": "2024-03-02",
+    "isNew": true
+  },
+  {
+    "title": "MERN Stack",
+    "tags": ["mongo", "express", "react", "node"],
+    "date": "2024-03-02",
+    "isNew": false
+  },
+  {
+    "title": "Cara Menggunakan NextJS",
+    "tags": ["javascript", "css"],
+    "date": "2024-03-02",
+    "isNew": false
+  }
+]
