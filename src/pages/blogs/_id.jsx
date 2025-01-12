@@ -20,8 +20,8 @@ function SinglePost() {
   }
   console.log("loading");
   return (
-    <div className="bg-green-500">
-      <h2 className="text-3xl text-black font-bold mb-4">{post?.title}</h2>
+    <div className="bg-blue-500 p-8 text-white">
+      <h2 className="text-3xl  font-bold mb-4">{post?.title}</h2>
       <p>{post?.body}</p>
     </div>
   );

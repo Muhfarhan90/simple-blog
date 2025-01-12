@@ -15,8 +15,8 @@ function Homepage() {
   };
 
   return (
-    <div className="">
-      <h1 className="text-4xl font-bold text-blue-500 mb-4">Simple Blog</h1>
+    <div className="p-8 flex flex-col items-center h-screen overflow-auto ">
+      <h1 className="text-4xl font-bold text-blue-500 mb-8">Simple Blog</h1>
       <Search onSearchChange={onSearchChange} totalPosts={totalPosts} />
       <div className="flex flex-col gap-4 mb-8">
         {posts.map(({ title, tags, date, isNew }, index) => (

@@ -5,7 +5,7 @@ import { RouterProvider } from "react-router-dom";
 function App() {
   const user = { username: "Bonjol" };
   return (
-    <div className=" max-w-[768px] mx-auto bg-gray-300 h-screen">
+    <div className=" max-w-[768px] mx-auto bg-white border h-screen">
       <GlobalContext.Provider value={user}>
         <RouterProvider router={router} />
       </GlobalContext.Provider>

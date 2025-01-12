@@ -1,5 +1,5 @@
 function About() {
-  return <div>Ini halaman About</div>;
+  return <div className="p-8">Ini halaman About</div>;
 }
 
 export default About;

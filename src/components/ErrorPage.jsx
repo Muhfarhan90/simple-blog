@@ -3,8 +3,8 @@ import gambarError from "../../public/error.gif";
 function ErrorPage() {
   const error = useRouteError;
   return (
-    <div>
-      <img src={gambarError} alt="Error !!!" className="w-[50%] h-screen" />
+    <div className="flex items-center text-center justify-center mt-40">
+      <img src={gambarError} alt="Error !!!" className="w-[50%] " />
     </div>
   );
 }

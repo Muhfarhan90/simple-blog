@@ -13,20 +13,20 @@ function Search(props) {
   };
   return (
     <div>
-      <div className="flex gap-4 mb-8">
+      <div className="flex gap-4 mb-8 items-center">
         <p>Cari Artikel : </p>
         <input
           type="text"
-          className="border-2 border-black"
+          className="border-2 border-black rounded-lg py-2 px-4"
           onChange={(e) => setSearch(e.target.value)}
           onKeyDown={searchKeydown}
         />
-        <button className="p-4 bg-yellow-400" onClick={onSearchChange}>
+        <button className="py-2 px-6 bg-yellow-400 rounded-xl" onClick={onSearchChange}>
           Cari
         </button>
       </div>
-      <div>
-        <small>
+      <div className="mb-4">
+        <small className="">
           Ditemukan {props.totalPosts} data dengan pencarian kata {search}
         </small>
       </div>

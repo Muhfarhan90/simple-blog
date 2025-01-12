@@ -16,16 +16,16 @@ const ArticleStatus = ({ isNew }) => {
 function Article(props) {
   const user = useContext(GlobalContext);
   return (
-    <div className="p-8 bg-gradient-to-br from-pink-500 to-red-500 rounded-2xl w-[400px]">
-      <div className="text-2xl text-bold text-white">{props.title}</div>
-      <div className="flex gap-8">
-        <small className="">
-          Date: {props.date}, tags: {props.tags.join(", ")}
-        </small>
-        <ArticleStatus isNew={props.isNew} />
+      <div className="p-8 bg-gradient-to-br from-pink-500 to-red-500 rounded-2xl w-[400px]">
+        <div className="text-2xl text-bold text-white">{props.title}</div>
+        <div className="flex gap-8">
+          <small className="">
+            Date: {props.date}, tags: {props.tags.join(", ")}
+          </small>
+          <ArticleStatus isNew={props.isNew} />
+        </div>
+        <small>Ditulis oleh {user.username}</small>
       </div>
-      <small>Ditulis oleh {user.username}</small>
-    </div>
   );
 }
 
